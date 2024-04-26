@@ -1,0 +1,373 @@
+/*CSS Reset / Normalize*/
+/* Hemos disponibilizado el básico de reset de estilos. Si quieren, añadan más informaciones 
+en las secciones señaladas */
+/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
+coloque nas sessões indicadas*/
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    /** Paleta de Colores **/
+    --cor-de-fundo: #F5F5F5;
+    --cor-de-link: #000;
+    --cor-de-bg: #EAF2FD;
+    --cor-de-text: #464646;
+    --cor-white: #fff;
+    --cor-btn: #2A7AE4;
+
+    /** Tipografia **/
+    --fuentePrincipal: 'Raleway';
+
+    /** Font Weight **/
+    --regular-400: 400;
+    --medium-500: 500;
+    --bold-700: 700;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1REM = 10px */
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: var(--cor-de-fundo) ;
+    font-family: var(--fuentePrincipal);
+    font-size: 1.6rem;
+    line-height: 1;
+    color: var(--cor-de-text);
+}
+
+/** Globales **/
+.contenedor {
+    max-width: 120rem;
+    width: 85%;
+    margin: 0 auto;
+}
+
+ol, ul,li {
+    list-style: none;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: var(--cor-de-link);
+}
+
+h1, h2, h3,h4 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+[class$="__title"] {
+    font-size: 3.2rem;
+    font-weight: var(--bold-700);
+    text-align: center;
+}
+
+/*Sección Menu*/
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 3rem auto;
+}
+
+.menu__header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.menu__list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
+
+.menu__list__item:nth-child(6) {
+    font-weight: var(--bold-700);
+}
+
+/*Sección Title*/
+.title__div {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 3.5rem;
+}
+
+.title__bio {
+    font-size: 5.2rem;
+    padding-top: 5rem;
+    font-weight: var(--bold-700);
+}
+
+.title__subsection {
+    margin-top: 2.4rem;
+    font-size: 2.2rem;
+    font-weight: var(--regular-400);
+    padding-right: 3.5rem;
+}
+
+.title__network {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+.title__network__item {
+    padding-right: 1rem;
+}
+
+.title__network__item a {
+    display: flex;
+    flex-direction: row;
+}
+
+.title__img {
+    margin-left: .4rem;
+    width: 1.5rem;
+}
+/*Sección About*/
+.about {
+    background-color: var(--cor-de-bg);
+    margin: 3rem 0;
+}
+
+.about__container {
+    padding: 6rem 0;
+}
+
+.about__title {
+    font-size: 3.2rem;
+    font-weight: var(--bold-700);
+    text-align: left;
+}
+
+.about__paragraph {
+    margin: 1.6rem 40rem 1.8rem 0;
+}
+
+/*Sección Hobbies*/
+.skills {
+    margin-top: 3.2rem;
+}
+
+.skills__line,
+.hobbies__line {
+    display: flex;
+    justify-content: space-around;
+}
+
+.skills__box,
+.hobbies__box {
+    display: flex;
+    align-items: end;
+    background-color: var(--cor-white);
+    width: 17.6rem;
+    height: 17.6rem;
+    padding-left: 1.6rem;
+    margin-top: 3.2rem;
+}
+
+.skills__img,
+.hobbies__img {
+    margin-bottom: 1.6rem;
+}
+
+.hobbies {
+    margin-top: 8.8rem;
+}
+
+/* Experiencia Académica*/
+.academic {
+    background-color: var(--cor-de-bg);
+    margin-top: 8.2rem;
+    padding-bottom: 8.2rem;
+}
+
+.academic__title {
+    padding-top: 8.2rem;
+}
+
+.academic__courses {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3.2rem;
+}
+
+.academic__courses__item__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 22.8em;
+    height: 28.6rem;
+    background-color: var(--cor-white);
+}
+
+.academic__courses__item__title {
+    padding-top: 1rem;
+    text-align: left;
+}
+
+.academic__courses__item__subtitle {
+    margin-top: .4rem;
+}
+
+/* experiencia*/
+.experience__section__title {
+    margin: 3.2rem 0;
+}
+
+.experience__box {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.experience__box:nth-child(3) {
+    flex-direction: row-reverse;
+}
+
+.experience__title {
+    font-size: 2.2rem;
+    text-align: left;
+    margin-bottom: .8rem;
+}
+
+.experience__text {
+    font-weight: var(--medium-500);
+    margin-bottom: 1rem;
+}
+
+.experience__repo {
+    margin-right: 1.6rem;
+}
+
+.experiencia__botao--repo,
+.experience__botao--demo  {
+    padding: .8rem 1.6rem;
+    border: 1px solid var(--cor-btn);
+    color: var(--cor-btn);
+    transition: background-color .3s;
+}
+
+.experiencia__botao--repo:hover,
+.experience__botao--demo:hover  {
+    background-color: var(--cor-btn);
+    color: var(--cor-white);
+}
+
+/* Contacto */
+.formcontato {
+    background-color: var(--cor-de-bg);
+    padding: 7rem 0;
+}
+
+.formcontato__contacto{
+    display: flex;
+    gap: 2rem;
+}
+
+.formcontato__field {
+    position: relative;
+    margin: 2rem 0;
+}
+
+.formcontato__input {
+    width: 100%;
+    height: 6rem;
+    border: none;
+    padding-left: 1rem;
+    border-radius: .5rem;
+}
+
+.formcontato__label {
+    position: absolute;
+    top: 30%;
+    left: 1rem;
+    transform: translateY(40%);
+    font-weight: var(--medium-500);
+    pointer-events: none;
+    transition: .3s;
+    color: #A2A2A2;
+}
+
+.formcontato__input:focus {
+    outline: none;
+    border-bottom: 2px solid var(--cor-btn);
+    padding: 1rem 0 0 1rem;
+}
+
+
+.formcontato__input:focus ~ .formcontato__label,
+.formcontato__input:valid ~ .formcontato__label {
+    top: 0;
+    font-size: 1.4rem;
+    color: var(--cor-btn);
+}
+
+
+/*footeer*/
+.footer {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+/*TODO: AGREGAR Media Querie*/
+/*Tablet*/
+@media (min-width: 768px) {
+
+/* Menú */
+
+/*title*/
+
+/*Skills*/
+
+/*Hobbies*/
+
+/*Formación Académica*/
+
+/*Experiencia Profesional*/
+
+}
+
+/*Mobile*/
+@media (min-width: 425px) {
+
+/*Menu*/
+
+/*Titulo*/
+
+/*Sección sobre mi*/
+
+/*Skills*/
+
+/*Hobbies*/
+
+/*Formación Académica*/
+
+/*Experiencia Profesional*/
+
+/*Contacto*/
+
+/*Footer*/
+
+}
