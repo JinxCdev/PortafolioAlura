@@ -151,7 +151,7 @@ img {
     }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 992px) {
     .title__profile {
         width: 36.8rem;
         height: 36.8rem;
@@ -248,7 +248,7 @@ img {
     }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 992px) {
     .about__paragraph {
         margin-right: 39rem;
     }
@@ -367,7 +367,7 @@ img {
     }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 992px) {
     .academic__courses__item__img {
         width: 36.8rem;
         height: 28.6rem;
@@ -410,7 +410,7 @@ img {
     margin-bottom: 6rem;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 992px) {
     .experience__box {
         flex-direction: row;
         gap: 2rem;
