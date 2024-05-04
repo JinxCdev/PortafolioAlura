@@ -217,8 +217,8 @@
         </section>
 
         <!-- Sección de Contacto -->
-        <section class="formcontato contenedor" id="contacto">
-            <div  class="formcontato__contacto">
+        <section class="formcontato" id="contacto">
+            <div  class="formcontato__contacto contenedor">
                 <div class="formcontato--esquerda">
                     <img class="formcontato__img" src="assets/img/contact_image.png">
                 </div>
@@ -228,27 +228,25 @@
                     <h3 class="formcontato__subtext">Complete el siguiente formulario y me pondré en contacto con usted lo antes posible. </h3>
                     <form class="formcontato__form" name="form">
                         <div class="formcontato__field">
-                            <input class="formcontato__input" required spellcheck="false" type="text" name="nombre">
                             <label class="formcontato__label">Nombre</label>
+                            <input class="formcontato__input" type="text" name="nombre">
                         </div>
 
                         <div class="formcontato__field">
-                            <input class="formcontato__input" required spellcheck="false" type="email" name="email">
                             <label class="formcontato__label">Email</label>
+                            <input class="formcontato__input" type="email" name="email">
                         </div>
 
                         <div class="formcontato__field">
-                            <input class="formcontato__input" required spellcheck="false" type="text" name="asunto">
                             <label class="formcontato__label">Asunto</label>
+                            <input class="formcontato__input" type="text" name="asunto">
                         </div>
-
                         
                         <div class="formcontato__field">
-                            <textarea class="formcontato__textarea" required spellcheck="false" rows="5" cols="40" id="mensagem" name="mensaje"></textarea>
                             <label class="formcontato__label">Mensaje</label>
+                            <textarea class="formcontato__textarea" rows="10" cols="40" id="mensagem" name="mensaje"></textarea>
                         </div>
 
-                        <!-- //TODO: Agregar CSS al boton -->
                         <button type="submit" class="formcontato__boton">Enviar mensaje</button>
                     </form>
                 </div>

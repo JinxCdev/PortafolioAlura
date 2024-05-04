@@ -478,12 +478,95 @@ img {
 }
 
 /** Contacto **/
+.formcontato {
+    background-color: var(--cor-de-bg);
+    padding: 3rem 0;
+}
 
+@media (min-width: 992px) {
+    .formcontato {
+        padding: 8rem 0;
+    }
+}
+
+.formcontato__contacto {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.formcontato--esquerda {
+    display: none;
+}
+
+@media (min-width: 992px) {
+    .formcontato--esquerda {
+        display: block;
+    }
+}
+
+.formcontato__title {
+    font-size: 3.2rem;
+    margin-bottom: 1rem;
+}
+
+.formcontato__subtext {
+    font-weight: var(--regular-400);
+    font-size: 1.6rem;
+}
+
+.formcontato__form {
+    padding-top: 3.2rem;
+}
 
 /*footeer*/
 .footer {
     text-align: center;
     margin: 2rem 0;
+}
+
+.formcontato__input {
+    width: 100%;
+    height: 3rem;
+    margin-bottom: 1rem;
+    border: none;
+}
+
+.formcontato__textarea {
+    width: 100%;
+    margin-bottom: 1rem;
+    border: none;
+}
+
+.formcontato__boton {
+    margin-top: 6.5rem;
+    background-color: var(--cor-btn);
+    padding: 1rem;
+    border: none;
+    color: var(--cor-white);
+    transition: background-color .5s;
+}
+
+.formcontato__boton {
+    margin-top: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .formcontato__boton {
+        margin-top: 3.5rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .formcontato__boton {
+        margin-top: 6.5rem;
+    }
+}
+
+.formcontato__boton:hover {
+    border: 1px solid var(--cor-btn);
+    color: var(--cor-btn);
+    background-color: var(--cor-white);
 }
 
 /*TODO: AGREGAR Media Querie*/
